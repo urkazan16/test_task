@@ -99,10 +99,14 @@
 		<div class="colums_center">
 			<h3>Теперь расскажите о себе</h3>
 			<form class="form_f">
-				<li><span>1</span><label>Фамилия и имя</label><input type="" name="" placeholder="Сидоров Александр">	</li>
-				<li><span>2</span><label>Электронная почта</label><input type="" name="" placeholder="Sidorov@yandex.ru"></li>
-				<li><span>3</span><label>Телефон</label><input type="" name=""  placeholder="+7 (999)-328-14-20"></li>
-				<li><span>4</span><label>Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?</label><input type="" name="" placeholder="Свой проект по созданию универсальной инфраструктуры строительства"></li>
+				<li><span>1</span><label>Фамилия и имя</label><input type="" name="" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Сидоров Александр'" placeholder="Сидоров Александр">	</li>
+				<li><span>2</span><label>Электронная почта</label><input type="" name="" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Sidorov@yandex.ru'" placeholder="Sidorov@yandex.ru"></li>
+				<li><span>3</span><label>Телефон</label><input type="" name=""  placeholder="+7 (999)-328-14-20" onfocus="this.placeholder = ''"
+onblur="this.placeholder = '+7 (999)-328-14-20'"></li>
+				<li><span>4</span><label>Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?</label><input type="" name="" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Свой проект по созданию универсальной инфраструктуры строительства'" placeholder="Свой проект по созданию универсальной инфраструктуры строительства"></li>
 				<li><button class="button__l">Отправить</button></li>
 			</form>
 		</div>

@@ -274,3 +274,11 @@ a {
 li {
   list-style-type: none;
 }
+
+:focus {
+    outline: 0;
+}
+
+.lang__switcher::-ms-expand {  /* РґР»СЏ IE */ 
+    display: none;
+}

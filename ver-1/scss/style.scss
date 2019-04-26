@@ -48,25 +48,50 @@ header {
 		line-height: 54px;
 	}
 
-	span, a {
+	> span{
 		font-family: 'Roboto', sans-serif;
 		font-size: 16px;
 		line-height: 26px;
 		color: #4A4556;
-    padding: 0px 50px;
+    	 padding: 0px 50px;
 	}
 
 
 .link__open {
 	position: relative;
 	display: block;
-	width: 220px;
+	width: 161px;
 	margin: 0px auto;
 	font-weight: 600;
 	line-height: 1.4;
 	text-transform: uppercase;
 	color: #222222;
 	    margin-top: 48px;
+
+	   &:hover {
+	   		border-bottom: 1px solid #F47821;
+	   }
+
+
+	   &:before, &:after {
+	  position: absolute;
+	  left: -18px;
+	  content: ' ';
+	  height: 14px;
+	  width: 2px;
+	  background-color: #F47821;
+	  top:3px;
+	}
+&:before {
+  	-webkit-transform: rotate(90deg);
+  	    -ms-transform: rotate(90deg);
+  	        transform: rotate(90deg);
+}
+&:after {
+  	-webkit-transform: rotate(0deg);
+  	    -ms-transform: rotate(0deg);
+  	        transform: rotate(0deg);
+}
 
 	    /* a {*/
 	    > span {
@@ -75,7 +100,7 @@ header {
 		    position: absolute;
 		    width: 54px;
 		    top: -17px;
-		    left: -17px;
+		    left: -45px;
 		    height: 54px;
 		    border-radius: 50%;
 		padding: 0;
@@ -84,25 +109,6 @@ header {
 	    /* }*/
 }
 
-.link__open:before, .link__open:after {
-	  position: absolute;
-	  left: 10px;
-	  content: ' ';
-	  height: 14px;
-	  width: 2px;
-	  background-color: #F47821;
-	  top:3px;
-}
-.link__open:before {
-  	-webkit-transform: rotate(90deg);
-  	    -ms-transform: rotate(90deg);
-  	        transform: rotate(90deg);
-}
-.link__open:after {
-  	-webkit-transform: rotate(0deg);
-  	    -ms-transform: rotate(0deg);
-  	        transform: rotate(0deg);
-}
 
 
 }
@@ -320,6 +326,10 @@ header {
 			width: 100%;
 
 			border-bottom: 2px solid #444;
+
+			&:focus {
+				border-bottom: 2px solid #fff
+			}
 			}
 
 			button {
@@ -333,7 +343,9 @@ header {
 				text-transform: uppercase;
 				font-weight: 600;
 				cursor: pointer;
-				
+				&:hover {
+					background: transparent;
+				}	
 			}
 		}
 	}
@@ -363,6 +375,32 @@ header {
 	.banners__fon {
 		height: auto;
 	}
+.items__list div { 
+padding: 50px 50px 65px 65px;
+
+}
+
+.item__box {
+    padding: 120px 60px 160px 60px;
+}
+
+.content__text .content__text_p_h {
+    padding: 120px 60px 160px 60px;
+}
+
+.footer {
+    padding: 60px;
+
+    li {
+    	span {
+    		display: none;
+    	}
+    }
+}
+
+
+
+
 }
 @media screen and (max-width:450px){
 .items__list div {
